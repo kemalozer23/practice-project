@@ -839,6 +839,10 @@
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0-preview.1.22076.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.1.22076.6"
+        },
         "compile": {
           "bin/placeholder/Core.dll": {}
         },

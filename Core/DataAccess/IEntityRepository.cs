@@ -10,7 +10,7 @@ namespace Core.DataAccess
     public interface IEntityRepository<TEntity>
     {
         TEntity Get(Expression<Func<TEntity, bool>> filter);
-        IEnumerable<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null);
+        IEnumerable<TEntity> GetEntities(Expression<Func<TEntity, bool>> filter = null);
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);
