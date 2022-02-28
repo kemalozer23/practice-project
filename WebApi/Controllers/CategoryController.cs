@@ -32,6 +32,7 @@ namespace WebApi.Controllers
             throw new NotImplementedException();
         }
 
+        // Tümüyle değişecekse PUT yalnızca az bir kısım değişecekse maliyet açısından PATCH kullanılabilir
         [HttpPut("{id}")]
         public IActionResult UpdateCategory(int categoryId, [FromBody] CategoryForUpdateDto category)
         {
